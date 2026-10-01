@@ -1,0 +1,32 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Local shared-notes demo: explicitly grants every CloudKit command used by its UI",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "cloudkit-sharing:default",
+    "cloudkit-sharing:allow-list-zones",
+    "cloudkit-sharing:allow-create-zone",
+    "cloudkit-sharing:allow-fetch-records",
+    "cloudkit-sharing:allow-modify-records",
+    "cloudkit-sharing:allow-query-records",
+    "cloudkit-sharing:allow-create-share",
+    "cloudkit-sharing:allow-fetch-share",
+    "cloudkit-sharing:allow-update-share",
+    "cloudkit-sharing:allow-add-participant",
+    "cloudkit-sharing:allow-set-participant-permission",
+    "cloudkit-sharing:allow-remove-participant",
+    "cloudkit-sharing:allow-stop-sharing",
+    "cloudkit-sharing:allow-leave-share",
+    "cloudkit-sharing:allow-fetch-invitation",
+    "cloudkit-sharing:allow-pending-invitations",
+    "cloudkit-sharing:allow-dismiss-invitation",
+    "cloudkit-sharing:allow-accept-invitation",
+    "cloudkit-sharing:allow-present-sharing-ui",
+    "cloudkit-sharing:allow-subscribe-events",
+    "cloudkit-sharing:allow-unsubscribe-events"
+  ]
+}
