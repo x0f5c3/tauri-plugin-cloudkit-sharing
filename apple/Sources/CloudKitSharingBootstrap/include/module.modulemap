@@ -1,0 +1,4 @@
+module CloudKitSharingBootstrap {
+  header "Bootstrap.h"
+  export *
+}

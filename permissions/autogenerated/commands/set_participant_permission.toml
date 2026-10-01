@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-set-participant-permission"
+description = "Enables the set_participant_permission command without any pre-configured scope."
+commands.allow = ["set_participant_permission"]
+
+[[permission]]
+identifier = "deny-set-participant-permission"
+description = "Denies the set_participant_permission command without any pre-configured scope."
+commands.deny = ["set_participant_permission"]

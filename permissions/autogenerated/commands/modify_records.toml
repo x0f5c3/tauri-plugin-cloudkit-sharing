@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-modify-records"
+description = "Enables the modify_records command without any pre-configured scope."
+commands.allow = ["modify_records"]
+
+[[permission]]
+identifier = "deny-modify-records"
+description = "Denies the modify_records command without any pre-configured scope."
+commands.deny = ["modify_records"]

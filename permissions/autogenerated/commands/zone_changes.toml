@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-zone-changes"
+description = "Enables the zone_changes command without any pre-configured scope."
+commands.allow = ["zone_changes"]
+
+[[permission]]
+identifier = "deny-zone-changes"
+description = "Denies the zone_changes command without any pre-configured scope."
+commands.deny = ["zone_changes"]

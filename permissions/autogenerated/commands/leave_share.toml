@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-leave-share"
+description = "Enables the leave_share command without any pre-configured scope."
+commands.allow = ["leave_share"]
+
+[[permission]]
+identifier = "deny-leave-share"
+description = "Denies the leave_share command without any pre-configured scope."
+commands.deny = ["leave_share"]

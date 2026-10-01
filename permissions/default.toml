@@ -1,0 +1,3 @@
+[default]
+description = "Capability and iCloud account status checks only; data and sharing require explicit grants."
+permissions = ["allow-capabilities", "allow-account-status"]

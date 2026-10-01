@@ -1,0 +1,33 @@
+[package]
+name = "tauri-plugin-cloudkit-sharing"
+version = "0.1.0"
+description = "Native CloudKit sharing and shared record access for Tauri on iOS, iPadOS, and macOS"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT OR Apache-2.0"
+exclude = ["/examples", "/dist-js", "/node_modules", "/apple/.build", "/.verification"]
+links = "tauri-plugin-cloudkit-sharing"
+
+[dependencies]
+tauri = { version = "2.11.3", default-features = false, features = ["test"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+specta = { version = "=2.0.0-rc.25", features = ["derive"] }
+tauri-specta = { version = "=2.0.0-rc.25", features = ["derive", "typescript"] }
+specta-typescript = "0.0.12"
+
+[target.'cfg(any(target_os = "macos", target_os = "ios"))'.dependencies]
+tokio = { version = "1", features = ["sync", "time"] }
+
+[dev-dependencies]
+tauri = { version = "2.11.3", default-features = false, features = ["test"] }
+
+[build-dependencies]
+tauri-plugin = { version = "2.6.3", features = ["build"] }
+
+[target.'cfg(target_os = "macos")'.build-dependencies]
+swift-rs = { version = "1.0.7", features = ["build"] }
+
+[target.'cfg(target_os = "ios")'.dependencies]
+tauri = { version = "2.11.3", default-features = false, features = ["wry"] }

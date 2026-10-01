@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-list-zones"
+description = "Enables the list_zones command without any pre-configured scope."
+commands.allow = ["list_zones"]
+
+[[permission]]
+identifier = "deny-list-zones"
+description = "Denies the list_zones command without any pre-configured scope."
+commands.deny = ["list_zones"]
